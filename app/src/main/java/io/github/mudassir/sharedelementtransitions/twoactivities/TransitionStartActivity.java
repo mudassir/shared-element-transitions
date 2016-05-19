@@ -1,4 +1,4 @@
-package io.github.mudassir.sharedelementtransitions;
+package io.github.mudassir.sharedelementtransitions.twoactivities;
 
 import android.content.Intent;
 import android.support.v4.app.ActivityCompat;
@@ -10,7 +10,9 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-public class ActivityTransitionActivity extends AppCompatActivity {
+import io.github.mudassir.sharedelementtransitions.R;
+
+public class TransitionStartActivity extends AppCompatActivity {
 
 	public static final String IMAGE_ID = "random.image.id";
 	public static final String IMAGE_URL_KEY = "random.image.url.key";
@@ -21,7 +23,7 @@ public class ActivityTransitionActivity extends AppCompatActivity {
 	@SuppressWarnings("ConstantConditions")
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_activity_transition);
+		setContentView(R.layout.activity_transition_start);
 
 		// Load image initially
 		Glide.with(this)
@@ -29,7 +31,7 @@ public class ActivityTransitionActivity extends AppCompatActivity {
 				.into((ImageView) findViewById(R.id.img_activity_transition_main));
 
 		findViewById(R.id.img_activity_transition_main).setOnClickListener(view -> {
-			Intent intent = new Intent(this, ActivityTransitionSubactivity.class);
+			Intent intent = new Intent(this, TransitionFinishActivity.class);
 			intent.putExtra(IMAGE_URL_KEY, IMAGE_URL);
 
 			// Specify the view to transition through an ID. Can be more than one.

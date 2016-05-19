@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import io.github.mudassir.sharedelementtransitions.twoactivities.TransitionStartActivity;
+
 public class MainActivity extends AppCompatActivity {
 
 	@Override
@@ -12,6 +14,6 @@ public class MainActivity extends AppCompatActivity {
 		setContentView(R.layout.activity_main);
 
 		findViewById(R.id.btn_two_activities).setOnClickListener(view ->
-				startActivity(new Intent(this, ActivityTransitionActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)));
+				startActivity(new Intent(this, TransitionStartActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)));
 	}
 }

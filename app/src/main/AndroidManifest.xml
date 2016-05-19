@@ -18,9 +18,9 @@
 			</intent-filter>
 		</activity>
 		<activity
-			android:name=".ActivityTransitionActivity"
+			android:name=".twoactivities.TransitionStartActivity"
 			android:taskAffinity=""/>
-		<activity android:name=".ActivityTransitionSubactivity">
+		<activity android:name=".twoactivities.TransitionFinishActivity">
 		</activity>
 	</application>
 
