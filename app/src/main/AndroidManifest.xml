@@ -22,6 +22,8 @@
 			android:taskAffinity=""/>
 		<activity android:name=".twoactivities.TransitionFinishActivity">
 		</activity>
+		<activity android:name=".twofragments.FragmentTransitionActivity">
+		</activity>
 	</application>
 
 </manifest>

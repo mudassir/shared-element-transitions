@@ -1,3 +1,4 @@
 <resources>
 	<string name="app_name">Shared Element Transitions</string>
+	<string name="two_fragments_transition_id">this:is:a:random:string:that:can:also:be:declared:dynamically</string>
 </resources>
